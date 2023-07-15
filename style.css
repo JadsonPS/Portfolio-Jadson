@@ -161,11 +161,12 @@ main {
 
 .intro p {
     margin: 5px;
-    font-size: 2.8rem;
+    font-size: 3.8rem;
     font-family: var(--main-font-family);
+    font-weight: 700;
     text-align: center;
 
-    /* color: red; */
+    color: var(--main-fonts-color); 
 }
 
 h3 {
@@ -370,7 +371,7 @@ h3 {
     flex-direction: column;
 
     padding-top: 100px;
-    margin-bottom: 100px;
+    padding-bottom: 100px; 
     text-align: center;
     color: var(--main-fonts-color);
 
@@ -517,13 +518,15 @@ h3 {
 -------------------*/
 
 #contact {
-    background: url(./imagens/img_programacao/pexels-fabricio-trujillo-60626.jpg) no-repeat;
-    background-size: cover;
+    /* background: url(./imagens/img_programacao/pexels-fabricio-trujillo-60626.jpg) no-repeat; */
+    background: rgba(0, 0, 0, 0);
+    
+    /* background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 
     margin: auto;
-    padding-bottom: 20px;
+   
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -532,6 +535,25 @@ h3 {
     color: var(--main-fonts-color);
 
     border-top: 1px solid var(--main-decor-color);
+    position: relative;
+
+}
+#contact::before {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: url(./imagens/img_programacao/pexels-fabricio-trujillo-60626.jpg );
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    position: absolute;
+    filter: blur(0px) opacity(0.5);
+
+}
+
+#contact h3 {
+    z-index: 1;
 }
 
 #contact p {
@@ -539,6 +561,7 @@ h3 {
     text-align: center;
     font-size: 2.5rem;
     font-family: var(--main-font-family);
+    z-index: 1;
 }
 
 #contact div {
@@ -547,6 +570,7 @@ h3 {
     margin-top: 1.2rem;
     gap: 10px;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 #contact .tel {
@@ -557,6 +581,7 @@ h3 {
 
     position: relative;
     /* border: 2px solid #22e200; */
+    z-index: 1;
 }
 
 #contact .tel:hover .info-contact {
