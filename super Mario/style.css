@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+/*--------------------
+        cenario
+--------------------*/
+.container-super-mario {
+    /* width: 100vw;
+    height: 100vh; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*--------------------
+        Mario
+--------------------*/
+#mario {
+    width: 80px;
+    height: 80px;
+    background-image: url(./imagens/frames/corte/mario-comemoracao.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+
+    position: relative;
+}
+
+
+
+/*--------------------
+        Botões
+--------------------*/
+
+#botoes {
+    width: 120px;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.botao{
+    width: 40px;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 50%;
+
+    background-image: url(./imagens/frames/corte/botao-frame0.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.botao:active{
+    background-image: url(./imagens/frames/corte/botao-frame1.png);
+}

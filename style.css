@@ -1,0 +1,985 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+:root {
+    font-size: 62.5%;
+    --main-background: #0b0c0f;
+    --main-fonts-color: #ffffff;
+
+    /* --main-decor-color:#22e200; */
+    /* --main-decor-color:#1dbe00; */
+    /* --main-decor-color:#be0000; */
+    --main-decor-color: #1a73e8;
+
+    /* --main-header-background:#21252e; */
+    --main-header-background: linear-gradient(-45deg, var(--main-decor-color), var(--main-background));
+
+    /* --main-font-family: 'Poppins', sans-serif; */
+    --font-pixel: 'VT323', monospace;
+    --main-font-family: var(--font-pixel);
+
+    cursor: url(./imagens/cursor/ponteiro-azul.png), default;
+    --cursor-hand: url(./imagens/cursor/hand-blue.png), default;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* a:hover {
+    cursor: var(--cursor-hand);
+}
+
+
+
+
+
+
+
+/*-------------------
+        HEADER
+-------------------*/
+
+header {
+    margin: 0 auto;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    transition: 0.3s;
+    z-index: 5;
+}
+
+header:hover {
+    opacity: 1;
+    background: var(--main-header-background);
+}
+
+.nav-show {
+    opacity: 0;
+}
+
+.logo {
+    font-family: var(--main-font-family);
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--main-decor-color);
+}
+
+.logo h2 span {
+    font-weight: 700;
+    color: var(--main-fonts-color);
+
+}
+
+.nav-bar {
+    list-style: none;
+    position: relative;
+    display: inline-flex;
+}
+
+a.nav-link {
+    margin: 2px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--main-fonts-color);
+    font-family: var(--main-font-family);
+    font-size: 2rem;
+    /* cursor: pointer; */
+    text-transform: uppercase;
+}
+
+.active {
+    background-color: var(--main-decor-color);
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    color: var(--main-background);
+    background: var(--main-decor-color);
+    border-radius: 5px;
+}
+
+
+
+/*-------------------
+        MAIN
+-------------------*/
+main {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-background);
+}
+
+
+
+/*-------------------
+        home
+-------------------*/
+
+#home {
+    margin: auto;
+    height: 100vh;
+    color: var(--main-fonts-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#home .filter {
+    /* background: url('https://images.unsplash.com/photo-1544099858-75feeb57f01b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat; */
+    background: url(./imagens/img_programacao/pexels-fabricio-trujillo-60626.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* opacity: .20; */
+    filter: invert(75%);
+    opacity: .5;
+}
+
+.intro {
+    text-align: center;
+    color: var(--main-fonts-color);
+    z-index: 1;
+    margin: auto;
+    padding: 20px;
+}
+
+.intro p {
+    margin: 5px;
+    font-size: 2.8rem;
+    font-family: var(--main-font-family);
+    text-align: center;
+
+    /* color: red; */
+}
+
+h3 {
+    padding-bottom: 15px;
+    letter-spacing: normal;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-size: 8rem;
+    color: var(--main-fonts-color);
+    /*  text-shadow: 0px 0px 5px var(--main-decor-color);*/
+}
+
+/*----------social media-----------*/
+.social-media {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media a {
+    margin: 10px;
+    font-size: 3rem;
+    text-align: center;
+    display: inline-block;
+    color: var(--main-fonts-color);
+}
+
+.social-media a:hover {
+    color: var(--main-decor-color);
+    text-shadow: 0px 0px 50px var(--main-decor-color);
+}
+
+
+
+/*-------------------
+        Sobre
+-------------------*/
+#about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--main-fonts-color);
+
+    border-top: 1px solid var(--main-decor-color);
+}
+
+/*----Foto---*/
+#about img {
+    max-width: 300px;
+    height: 300px; 
+    border-radius: 50%;
+    filter: grayscale(100%);
+    margin-top: 20px;
+}
+#about img:hover {
+    filter: grayscale(0);
+}
+
+#about button {
+    margin: 20px 0px;
+    background-color: var(--main-decor-color);
+    padding: 2px;
+    border-radius: 10px;
+    border: 2px solid var(--main-decor-color);
+    font-family: var(--font-pixel);
+    font-size: 2rem;
+    color: var(--main-fonts-color);
+    cursor:var(--cursor-hand), default;
+}
+#about button:hover {
+    color: var(--main-decor-color);
+    background-color: var(--main-fonts-color);
+    border: 2px solid var(--main-decor-color);
+    
+}
+
+#about p {
+    max-width: 700px;
+    height: auto;
+    margin: 20px;
+    font-family: var(--main-font-family);
+    font-size: 2.5rem;
+    text-align: justify;
+
+    color: var(--main-fonts-color);
+}
+
+
+/*-------------------
+       skills
+-------------------*/
+
+#skills {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-top: 1px solid var(--main-decor-color);
+    
+    text-align: center;
+    color: var(--main-fonts-color);
+
+
+    /* background-color: red; */
+    background: url(./imagens/img_programacao/pexels-luis-gomes-546819.jpg);
+    background-attachment: fixed;
+}
+
+#skills p {
+    font-family: var(--main-font-family);
+    font-size: 2.5rem;
+    padding: 10px;
+}
+
+.skill-logos {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skill-logos .habilidade {
+    width: 100px;
+    height: 100px;
+    background-color: var(--main-decor-color);
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 9rem;
+    position: relative;
+}
+
+.skill-logos .habilidade:hover h4 {
+    animation: shower 1s forwards;
+}
+
+.skill-logos .habilidade:hover i {
+    animation: hider 1s forwards;
+}
+
+.skill-logos .habilidade h4 {
+    position: absolute;
+    opacity: 0;
+    font-size: 3.2rem;
+    padding-bottom: 0;
+    font-family: var(--font-pixel);
+}
+
+@keyframes shower {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hider {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+/*----------------------
+        project
+----------------------*/
+
+#projects {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: var(--main-fonts-color);
+
+    border-top: 1px solid var(--main-decor-color);
+}
+
+#projects p {
+    font-family: var(--main-font-family);
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/*----------card - Project------------ */
+.card {
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px;
+    max-width: 450px;
+    height: 205px;
+
+    border-radius: 25px;
+    background-color: var(--main-background);
+
+    position: relative;
+    overflow: hidden;
+}
+.card:hover {
+    box-shadow: 0 0 1.5rem var(--main-decor-color);
+    scale: 1.02;
+}
+
+/*---------Imagem do projeto--------*/
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: 1s;
+    filter: grayscale(100%);
+}
+.card:hover img {
+    filter: blur(50px) grayscale() opacity(0);
+}
+
+/*----------container com as informações do projeto---------*/
+.card-descri {
+    padding: 30px 0 0 0;
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 130px;
+    transition: 1s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background: linear-gradient(0deg, #1064a6 20%, transparent); */
+    background: linear-gradient(0deg, var(--main-decor-color), transparent);
+    font-size: 1.8rem;
+
+}
+.card:hover .card-descri {
+    top: 0;
+}
+
+
+/*-----------Nome dos projetos---------*/
+.card-descri h2 {
+    font-family: var(--main-font-family);
+    color: white;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    background-color: var(--main-decor-color);
+    border-radius: 20px;
+    padding: 0 10px;
+}
+
+.card .work-content {
+    text-align: justify;
+    font-size: 1rem;
+    color: var(--main-fonts-color);
+    font-family: var(--main-font-family);
+    display: flex;
+    justify-content: center;
+}
+
+
+/*-------Descrição dos projetos------*/
+.card .work-content p {
+    margin: 0;
+    width: 90%;    
+}
+
+.card .work-content p span {
+    font-weight: 700;
+}
+
+
+/*-----------botão dos projetos----------*/
+.card-descri button {
+    width: 80px;
+    height: 30px;
+
+    cursor: var(--cursor-hand);
+
+    margin-top: 5px;
+    padding: 2px;
+
+    background-color: var(--main-background) ;
+    border: 2px solid var(--main-decor-color);
+    border-radius: 20px;
+
+    font-size: 2rem;
+    color: var(--main-fonts-color);
+    font-family: var(--main-font-family);
+    transition: 0.2s ease-in;
+}
+.card-descri button:hover {
+    background-color: var(--main-decor-color);
+    border: 2px solid var(--main-background);
+    color: var(--main-background);
+}
+
+
+
+
+/*-------------------
+       Contact
+-------------------*/
+
+#contact {
+    background: url(./imagens/img_programacao/pexels-fabricio-trujillo-60626.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    margin: auto;
+    padding-bottom: 20px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-fonts-color);
+
+    border-top: 1px solid var(--main-decor-color);
+}
+
+#contact p {
+    padding: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: var(--main-font-family);
+}
+
+#contact div {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#contact .tel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    /* border: 2px solid #22e200; */
+}
+
+#contact .tel:hover .info-contact {
+    animation: shower-down 1s forwards;
+}
+
+#contact .tel a {
+    width: 50px;
+    height: 50px;
+    margin: 0 70px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: var(--main-decor-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#contact .tel a{
+    font-size: 3.5rem;
+}
+#contact .tel a:hover {
+    color: rgb(255, 255, 255);
+    background-color: var(--main-decor-color);
+}
+
+#contact .tel p{
+    font-size: 2.2rem;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+}
+
+@keyframes shower-down {
+    0% {
+        top: 20px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 40px;
+        opacity: 1;
+    }
+}
+
+
+
+/*-------------------
+       footer
+-------------------*/
+
+footer {
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-background);
+    font-family: var(--main-font-family);
+
+    color: #ffffff8f;
+    font-size: 2rem;
+    line-height: 40px;
+    text-align: center;
+}
+
+.copyright a {
+    color: #ffffff8f;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    color: var(--main-decor-color);
+}
+
+
+
+/*-------------------
+          hr
+-------------------*/
+
+hr {
+    background: var(--main-decor-color);
+    margin: 2px;
+    height: 3px;
+    width: 150px;
+    border-radius: 5px;
+    border: hidden;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+
+
+/*-------------------
+       scrollbar
+-------------------*/
+
+::-webkit-Scrollbar {
+    /* background: var(--main-background); */
+    background: linear-gradient(var(--main-background), var(--main-decor-color));
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--main-decor-color);
+    box-shadow: inset 0 0 20px var(--main-decor-color);
+}
+
+::-webkit-scrollbar-track {
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+
+
+/*-------------------
+   floating buttons
+-------------------*/
+
+.btn-float {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: fixed;
+    right: 1%;
+    bottom: 4%;
+}
+
+.btn-float #go-up, #link-what {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid;
+
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: var(--main-font-family);
+    color: var(--main-fonts-color);
+    font-weight: 700;
+}
+
+.btn-float #go-up:hover, #link-what:hover {
+    transition: all 0.5s ease;
+    scale: 1.2;
+    color: var(--main-decor-color);
+    box-shadow: 0px 0px 8px var(--main-decor-color);
+}
+
+#go-up i {
+    animation: go-top 1s infinite alternate;
+}
+
+#link-what i {
+    animation: go-top 1.2s infinite alternate;
+}
+
+@keyframes go-top {
+    from {
+        transform: translateY(-1px);
+    }
+
+    to {
+        transform: translateY(2px);
+    }
+}
+
+
+
+
+/*-------------------
+       hamburger
+-------------------*/
+
+.hamburger {
+    display: none;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #dbdbdb;
+    margin: 5px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(00px);
+    }
+}
+
+
+
+/*-------------------
+    media queries
+-------------------*/
+
+@media only screen and (max-width: 1484px) and (min-width: 1214px) {
+    /* .work {
+        padding: 20px 10%;
+    } */
+}
+
+@media only screen and (max-width: 1214px) and (min-width: 500px) {
+    /* .work {
+        padding: 20px 12%;
+    } */
+
+    .skill-logos {
+        width: 80%;
+    }
+
+    .skill-logos .habilidade {
+        margin: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    #home,
+    #projects,
+    #contact {
+        overflow-x: hidden;
+    }
+
+    header {
+        background-color: var(--main-background);
+    }
+
+    .logo {
+        position: absolute;
+        left: 30px;
+    }
+
+    .nav-show {
+        opacity: 1;
+    }
+
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background: var(--main-header-background);
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: -1;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 17px;
+        right: 25%;
+        display: block;
+        /* cursor: pointer; */
+        z-index: 5;
+    }
+
+    .nav-bar li {
+        opacity: 0;
+    }
+
+    .card {
+        scale: .85;
+    }
+
+    .skill-logos {
+        width: 80%;
+    }
+
+    .skill-logos .habilidade {
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .skill-logos {
+        width: 80%;
+    }
+
+    .skill-logos .habilidade {
+        margin: 10px;
+    }
+
+    html {
+        width: 100vw;
+    }
+
+    h3 {
+        font-size: 6rem;
+    }
+
+    #about img {
+        max-width: 200px;
+        height: 200px; 
+        
+    }
+}
+
+.nav-active {
+    transform: translate(0%);
+}
+
+
+
+/*-------------------
+    Botão Divertido
+-------------------*/
+#buttomo {
+    width: 50px;
+    height: 40px;
+    background-image: url(./imagens/cursor/buttom/pixil-layer-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    /* margin: auto; */
+
+    /* background-color: red; */
+}
+
+#buttomo:hover {
+    cursor: var(--cursor-hand);
+}
+
+#buttomo:active {
+    background-image: url(./imagens/cursor/buttom/pixil-layer-0.png);
+}
+
+
+/*-------------------
+    Super mário
+-------------------*/
+#superMario {
+    width: 200px;
+    height: 180px;
+    /*  background-color: red;  */
+    text-align: center;
+
+    position: relative;
+
+    z-index: 1;
+    margin: auto;
+
+    padding: 10px;
+    display: none;
+    justify-content: center;
+}
+
+
+/*-------cenario super mario----------*/
+.container-super-mario {
+    /* width: 100vw;
+    height: 100vh; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*----------Mario---------*/
+#mario {
+    width: 80px;
+    height: 80px;
+    /* background-image: url(./imagens/frames/corte/mario-comemoracao.png); */
+    background-image: url(./mario/imagens/frames/corte/mario-comemoracao.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+
+    position: relative;
+}
+
+
+/*------- Botões Mario ------*/
+
+#botoes-Mario {
+    width: 120px;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.botao-Mario {
+    width: 40px;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 50%;
+
+    background-image: url(./mario/imagens/frames/corte/botao-frame0.png);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.botao-Mario:active {
+    background-image: url(./mario/imagens/frames/corte/botao-frame1.png);
+}

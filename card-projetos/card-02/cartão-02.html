@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 02</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+        * {
+            font-family: 'Poppins';
+        }
+        :root {
+            --main-fonts-color:white;
+            --main-decor-color:#1064a6 ;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+
+        /*-------------------
+             projects teste
+        -------------------*/
+
+        #projects {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--main-fonts-color);
+
+            /* border-top: 1px solid var(--main-decor-color); */
+        }
+
+        #projects h3 {
+            padding-top: 70px;
+        }
+
+        #projects p {
+            font-family: var(--main-font-family);
+            font-size: 1.2rem;
+        }
+
+        .work {
+            display: flex;
+            /* flex: 1; */
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+        }
+
+        /* card - Project */
+        .card {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            width: 450px;
+            /* height: 350px; */
+            height: 205px;
+            
+            border-radius: 25px;
+            background-color: var(--main-decor-color);
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 1.5rem var(--main-decor-color);
+            filter: none;
+            scale: 1.02;
+        }
+
+        .card:hover img {
+            filter: grayscale();
+        }
+
+        .card img {
+            width: 100%;
+            /* height: 100%; */
+            border-radius: 10px 10px 0 0;
+            /* filter: grayscale(); */
+            transition: 1s;
+        }
+
+      
+
+        .card #descricao-projeto {
+            /* grid-area: descri; */
+        }
+
+        .card .work-content {
+            text-align: justify;
+            /* padding-top: 5px; */
+            font-size: 1rem;
+            color: var(--main-fonts-color);
+            font-family: var(--main-font-family);
+            
+            
+
+            /* grid-area: texto; */
+
+           /*  color: red; */
+
+        }
+
+        .card .work-content p {
+             /* width: 90%; */ 
+            margin: 0;
+        }
+
+        .card a {
+            text-decoration: none;
+        }
+
+        .card-descri {
+            /* display: grid;
+            grid-template-areas:
+                'titulo titulo'
+                'descri texto'
+                'botao texto'
+                'vazio texto'
+                'vazio texto'; */
+            /* gap: 0 15px; */
+            padding: 30px 0 0 0;
+      
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 120px;
+            transition: 1s;
+
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+
+            /* background: linear-gradient(180deg, red 50%, blue); */
+            background: linear-gradient(0deg, #1064a6 20%, transparent);
+        } 
+        .card:hover .card-descri {top: 0;}
+
+        .card-descri h2 {
+            /* grid-area: titulo; */
+            font-family: var(--main-font-family);
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        .card-descri button {
+            width: 80px;
+            height: 30px;
+            cursor: var(--cursor-hand);
+           
+            margin-top: 5px;
+            padding: 2px;
+            /* background-color: #ff000089; */
+            background-color: rgb(19, 141, 0);
+            border: none;
+            border-radius: 10px;
+
+            font-size: 20px;
+            color: var(--main-fonts-color);
+            font-family: var(--main-font-family);
+
+            /* grid-area: botao; */
+        }
+
+        .card-descri button:hover {
+
+            background-color: rgb(23, 164, 1);
+            color: var(--main-background);
+
+        }
+        /*-------------------
+             projects teste fim
+        -------------------*/
+
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!------------------card teste------------------>
+    <div class="card"><!-- projetc 1 -->
+        <img class="work-img" src="./imagens/projetos/Tom jazz school.png" alt="Imagem de um dos meus projetos">
+        <!-- <h2>Titulo</h2> -->
+
+       <!--  <div class="card-descri">
+            <h2>Project Tom's school Jazz</h2>
+            
+            <p class="work-content" id="descricao-projeto">Descrição:</p>
+            <div class="work-content">
+                <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptates, eaque voluptate a autem rerum est officia reprehend</p>
+            </div>
+
+            <a href="https://jadsonps.github.io/Tom-school-jazz/" target="_blank"> 
+                <button>Visualizar</button>
+            </a> -->
+
+            <div class="card-descri">
+                <h2>Project Tom's school Jazz</h2>
+                
+                <!-- <p class="work-content" id="descricao-projeto">Descrição:</p> -->
+                <div class="work-content">
+                    <p>Ferramenta utilizadas: HTML, CSS</p>
+                </div>
+    
+                <a href="https://jadsonps.github.io/Tom-school-jazz/" target="_blank"> <!--Link to project-->
+                    <button>Visitar</button>
+                </a>
+            </div>
+    </div>
+
+
+
+
+
+
+    <div class="card"><!-- projetc 1 -->
+        <img class="work-img" src="./imagens/projetos/landing page academia.png" alt="Imagem de um dos meus projetos">
+        <!-- <h2>Titulo</h2> -->
+
+        <div class="card-descri">
+            <h2>Tom's school Jazz</h2>
+            <a href="https://jadsonps.github.io/Tom-school-jazz/" target="_blank"> <!--Link to project-->
+            <button>Visualizar</button>
+            </a>
+            <p class="work-content" id="descricao-projeto">Descrição:</p>
+            <div class="work-content">
+                <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptates, eaque voluptate a autem rerum est officia reprehend</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card"><!-- projetc 1 -->
+        <img class="work-img" src="./imagens/projetos/Tom jazz school.png" alt="Imagem de um dos meus projetos">
+        <!-- <h2>Titulo</h2> -->
+
+        <div class="card-descri">
+            <h2>Tom's school Jazz</h2>
+            <a href="https://jadsonps.github.io/Tom-school-jazz/" target="_blank"> <!--Link to project-->
+            <button>Visualizar</button>
+            </a>
+            <p class="work-content" id="descricao-projeto">Descrição:</p>
+            <div class="work-content">
+                <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptates, eaque voluptate a autem rerum est officia reprehend</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card"><!-- projetc 1 -->
+        <img class="work-img" src="./imagens/projetos/Tom jazz school.png" alt="Imagem de um dos meus projetos">
+        <!-- <h2>Titulo</h2> -->
+
+        <div class="card-descri">
+            <h2>Tom's school Jazz</h2>
+            <a href="https://jadsonps.github.io/Tom-school-jazz/" target="_blank"> <!--Link to project-->
+            <button>Visualizar</button>
+            </a>
+            <p class="work-content" id="descricao-projeto">Descrição:</p>
+            <div class="work-content">
+                <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptates, eaque voluptate a autem rerum est officia reprehend</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card"><!-- projetc 1 -->
+        <img class="work-img" src="./imagens/projetos/Tom jazz school.png" alt="Imagem de um dos meus projetos">
+        <!-- <h2>Titulo</h2> -->
+
+        <div class="card-descri">
+            <h2>Tom's school Jazz</h2>
+            <a href="https://jadsonps.github.io/Tom-school-jazz/" target="_blank"> <!--Link to project-->
+            <button>Visualizar</button>
+            </a>
+            <p class="work-content" id="descricao-projeto">Descrição:</p>
+            <div class="work-content">
+                <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptates, eaque voluptate a autem rerum est officia reprehend</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card"><!-- projetc 1 -->
+        <img class="work-img" src="./imagens/projetos/Tom jazz school.png" alt="Imagem de um dos meus projetos">
+        <!-- <h2>Titulo</h2> -->
+
+        <div class="card-descri">
+            <h2>Tom's school Jazz</h2>
+            <a href="https://jadsonps.github.io/Tom-school-jazz/" target="_blank"> <!--Link to project-->
+            <button>Visualizar</button>
+            </a>
+            <p class="work-content" id="descricao-projeto">Descrição:</p>
+            <div class="work-content">
+                <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptates, eaque voluptate a autem rerum est officia reprehend</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

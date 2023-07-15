@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="./imagens/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <title>Portfólio Jadson</title>
+</head>
+
+
+<body>
+    <div class="container" id="container-principal">
+
+        <!-----------------------------------
+                        HEADER
+        ------------------------------------->
+        <header>
+            <a class="logo" href="#home">
+                <!-- <img src="./imagens/connectdevelop.svg" alt="Logo"> -->
+                <h2>Portfó<span>lio</span></h2>
+            </a>
+            <nav>
+                <ul class="nav-bar">
+                    <div class="bg"></div>
+                    <li><a class="nav-link active" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">Sobre</a></li>
+                    <li><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li><a class="nav-link" href="#projects">Projetos</a></li>
+                    <li><a class="nav-link" href="#contact">Contato</a></li>
+
+                </ul>
+
+                <div class="hamburger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-----------------------------------
+                        MAIN
+        ------------------------------------->
+        <main>
+
+            <!-------------------------------
+                            Home
+            -------------------------------->
+            <div id="home">
+                <div class="filter"></div>
+                <section class="intro">
+                    <h3>Jadson Pereira
+                        <hr>
+                    </h3>
+                    <p>Desenvolvedor Front-End</p>
+
+
+                    <!------------------social media links------------------>
+                    <div class="social-media">
+                        <!-- <a href="#" target="_blank"> <i class="fab fa-codepen"></i></a> -->
+                        <!-- <a href="#" target="_blank"> <i class="fab fa-twitter"></i></a> -->
+                        <a href="mailto:jadsonps12345@gmail.com" target="_blank"> <i class="fa fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/linhafrontend" target="_blank"> <i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/JadsonPS" target="_blank"> <i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jadson-pereira-da-silva/" target="_blank"> <i
+                                class="fab fa-linkedin-in"></i></a>
+                        <!-- <a href="#" target="_blank"> <i class="fab fa-youtube"></i></a> -->
+                    </div>
+
+                    <!----------------botão divertido-------------->
+                    <div id="buttomo"></div>
+                    <div id="superMario">
+                        <div class="container-super-mario">
+                            <div id="mario"></div>
+                            <div id="botoes-Mario">
+                                <div class="botao-Mario" id="esquerda" onclick="mover('esquer')"></div>
+                                <div class="botao-Mario" id="direita" onclick="mover('direit')"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <!-----------------------------------
+                            Sobre
+            ------------------------------------>
+            <div id="about">
+
+                <h3>
+                    Sobre mim
+                    <hr>
+                </h3>
+
+                <img src="./imagens/img_programacao/pexels-lukas-574073.jpg" alt="Foto minha">
+                <a href="currículo"><button>Currículo</button></a>
+
+                <p>
+                    Olá! Me chamo Jadson Pereira, sou um desenvolvedor front-end apaixonado pelo mundo da programação, adoro transformar ideias em interfaces elegantes e funcionais. Estou constantemente explorando novas tecnologias e tendências do setor para criar experiências digitais memoráveis. Sou criativo, tenho facilidade para trabalhar em equipe. Além disso, já tive experiencia como monitor de iniciação científica, o que me proporcionou aprimorar algumas soft skills incluindo minhas habilidades de comunicação. Estou pronto para enfrentar novos desafios e fazer parte de equipes que transformam o mundo digital!
+                </p>
+            </div>
+
+            <!---------------------------------
+                            Skills
+            ----------------------------------->
+            <div id="skills">
+                <h3>Habilidades
+                    <hr>
+                </h3>
+                <p>Essas são as habilidades que eu desenvolvi até o momento.</p>
+
+
+                <ul class="skill-logos">
+                    <li class="habilidade">
+                        <i class="fab fa-html5"></i>
+                        <h4>HTML</h4>
+                    </li>
+                    <li class="habilidade"><i class="fab fa-css3-alt"></i>
+                        <h4>CSS</h4>
+                    </li>
+                    <li class="habilidade"><i class="fab fa-js-square"></i>
+                        <h4>JavaScript</h4>
+                    </li>
+                    <li class="habilidade"><i class="fab fa-git-alt"></i>
+                        <h4>GIT</h4>
+                    </li>
+                    <li class="habilidade"><i class="fab fa-github"></i>
+                        <h4>GITHUB</h4>
+                    </li>
+                    <li class="habilidade"><i class="fab fa-figma"></i>
+                        <h4>FIGMA</h4>
+                    </li>
+                    <!-- <li class="habilidade"><i class="fab fa-node-js"></i>
+                        <h4>NODE.JS</h4>
+                    </li>
+                    <li class="habilidade"><i class="fab fa-react"></i>
+                        <h4>REACT.JS</h4>
+                    </li>  -->
+                </ul>
+            </div>
+
+
+
+            <!--------------------------------
+                        Projects
+            ---------------------------------->
+            <div id="projects">
+                <h3>Meus Projetos
+                    <hr>
+                </h3>
+                <p>Aqui estão alguns dos meus projetos, talvez você goste.</p>
+
+                <div class="work">
+
+                    <!------------------card 1------------------>
+                    <!-- project Tom's jazz school -->
+                    <div class="card">
+                        <img class="work-img" src="./imagens/projetos/Tom jazz school.png"
+                            alt="Imagem de um dos meus projetos">
+
+                        <div class="card-descri">
+                            <h2>Project Tom's school Jazz </h2>
+
+                            <div class="work-content">
+                                <p>
+                                    <span>Ferramenta utilizadas:</span> HTML, CSS.
+                                </p>
+                            </div>
+
+                            <a href="https://jadsonps.github.io/Tom-school-jazz/" target="_blank">
+                                <button>Visitar</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!------------------card 2------------------>
+                    <!-- project landing page academia-->
+                    <div class="card">
+                        <img class="work-img" src="./imagens/projetos/landing page academia.png"
+                            alt="Imagem de um dos meus projetos">
+
+                        <div class="card-descri">
+                            <h2>Project Landing page academia</h2>
+
+                            <div class="work-content">
+                                <p>
+                                    <span>Ferramenta utilizadas:</span> HTML, CSS.
+                                </p>
+                            </div>
+
+                            <a href="https://jadsonps.github.io/Landing-page-academia/" target="_blank">
+                                <button>Visitar</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!------------------card 3------------------>
+                    <!-- project Nexcent -->
+                    <div class="card">
+                        <img class="work-img" src="./imagens/projetos/Nexcent.png" alt="Imagem de um dos meus projetos">
+
+                        <div class="card-descri">
+                            <h2>Project Nexcent </h2>
+
+                            <div class="work-content">
+                                <p>
+                                    <span>Ferramenta utilizadas:</span> HTML, CSS.
+                                </p>
+                            </div>
+
+                            <a href="https://jadsonps.github.io/site-nexcent/" target="_blank">
+                                <button>Visitar</button>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!------------------card 4------------------>
+                    <!-- project Easy Shopping -->
+                    <div class="card">
+                        <img class="work-img"
+                            src="https://raw.githubusercontent.com/JadsonPS/Easy-Shopping/master/assets/Desktop.png"
+                            alt="Imagem de um dos meus projetos">
+
+                        <div class="card-descri">
+                            <h2>Project Easy Shopping  </h2>
+
+                            <div class="work-content">
+                                <p>
+                                    <span>Ferramenta utilizadas:</span> HTML, CSS.
+                                </p>
+                            </div>
+
+                            <a href="https://jadsonps.github.io/Easy-Shopping/" target="_blank">
+                                <button>Visitar</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!------------------card 5------------------>
+                    <!-- project Calculadora Pixelart -->
+                    <div class="card">
+                        <img class="work-img"
+                            src="https://github.com/JadsonPS/Calculadora-pixel/raw/main/calculadora.png"
+                            alt="Imagem de um dos meus projetos">
+
+                        <div class="card-descri">
+                            <h2>Project Calculadora Pixelart</h2>
+
+                            <div class="work-content">
+                                <p>
+                                    <span>Ferramenta utilizadas:</span> HTML, CSS, JavaScript.
+                                </p>
+                            </div>
+
+                            <a href="https://jadsonps.github.io/Calculadora-pixel/" target="_blank">
+                                <button>Visitar</button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        
+            <!-----------------------------------
+                            Contacts
+            ------------------------------------->
+            <div id="contact"> 
+
+                <!--------------social media links-------------->
+                <h3>
+                    Contatos
+                    <hr>
+                </h3>
+                <p>Fique à vontade para me contactar pelas minhas redes sociais.</p>
+                <div>
+                    <!-- Whatsapp -->
+                    <div class="tel">
+                        <a href="https://api.whatsapp.com/send?phone=5581987285466&text=Ol%C3%A1,%20esse%20%C3%A9%20o%20n%C3%BAmero%20de%20Jadson"
+                            target="_blank">
+                            <i class="fas fa-phone"></i>
+                            <p class="info-contact">(81)98728-5466</p>
+                        </a>
+                    </div>
+
+                    <!-- email -->
+                    <div class="tel">
+                        <a href="mailto:jadsonps12345@gmail.com" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                            <p class="info-contact">jadsonps12345@gmail.com</p>
+                        </a>
+                    </div>
+
+                    <!-- github -->
+                    <div class="tel">
+                        <a href="https://github.com/JadsonPS" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <p class="info-contact">JadsonPs</p>
+                        </a>
+                    </div>
+
+                    <!-- linkedin -->
+                    <div class="tel">
+                        <a href="https://www.linkedin.com/in/jadson-pereira-da-silva/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                            <p class="info-contact">Jadson Pereira da Silva</p>
+                        </a>
+                    </div>
+
+                    <!-- instagram -->
+                    <div class="tel">
+                        <a href="https://www.instagram.com/linhafrontend/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <p class="info-contact">@linhafrontend</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+        <!-----------------------------------
+                        FOOTER
+        ------------------------------------->
+        <footer class="copyright">
+            Copyright © 2023
+            <a href="https://github.com/JadsonPS" target="_blank"> Jadson Pereira</a>
+        </footer>
+    </div>
+
+
+    <!---------------------------
+            Floatin buttons
+    ----------------------------->
+    <div class="btn-float">
+
+        <!-- go up -->
+        <a href="#home" class="go-up" id="go-up">
+            <!-- UP  -->
+            <i class="fas fa-angle-double-up"></i>
+        </a>
+
+        <!-- whatsapp -->
+        <a href="https://api.whatsapp.com/send?phone=5581987285466&text=Ol%C3%A1,%20esse%20%C3%A9%20o%20n%C3%BAmero%20de%20Jadson"
+            target="_blank" id="link-what">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+
+    <!-----------------------------------
+                JavaScript
+    ------------------------------------->
+    <script src="script.js"></script>
+    <script src="./clickbotao.js"></script>
+    <script src="./mario/scriptSuperMario.js"></script>
+</body>
+
+</html>
