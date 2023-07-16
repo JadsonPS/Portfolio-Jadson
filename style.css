@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
 
 
 :root {
@@ -8,15 +8,17 @@
 
     /* --main-decor-color:#22e200; */
     /* --main-decor-color:#1dbe00; */
-    /* --main-decor-color:#be0000; */
-    --main-decor-color: #1a73e8;
+     /* --main-decor-color:#be0000; */ 
+     --main-decor-color: #1a73e8; 
 
     /* --main-header-background:#21252e; */
     --main-header-background: linear-gradient(-45deg, var(--main-decor-color), var(--main-background));
 
-    /* --main-font-family: 'Poppins', sans-serif; */
-    --font-pixel: 'VT323', monospace;
-    --main-font-family: var(--font-pixel);
+    --main-font-family: 'Poppins', sans-serif;
+    --font-pixel-title: 'VT323', monospace;
+    /* --main-font-family: var(--font-pixel-title);  */ 
+    --main-font-family: monospace, sans-serif;
+    
 
     cursor: url(./imagens/cursor/ponteiro-azul.png), default;
     --cursor-hand: url(./imagens/cursor/hand-blue.png), default;
@@ -240,7 +242,7 @@ h3 {
     padding: 2px;
     border-radius: 10px;
     border: 2px solid var(--main-decor-color);
-    font-family: var(--font-pixel);
+    font-family: var(--main-font-family);
     font-size: 2rem;
     color: var(--main-fonts-color);
     cursor:var(--cursor-hand), default;
@@ -294,7 +296,8 @@ h3 {
 #skills p {
     font-family: var(--main-font-family);
     font-size: 2.5rem;
-    padding: 10px;
+    /* padding: 10px; */
+    margin: 0 20px;
 }
 
 .skill-logos {
@@ -333,7 +336,7 @@ h3 {
     opacity: 0;
     font-size: 3.2rem;
     padding-bottom: 0;
-    font-family: var(--font-pixel);
+    font-family: var(--main-font-family);
 }
 
 @keyframes shower {
@@ -370,6 +373,7 @@ h3 {
     align-items: center;
     flex-direction: column;
 
+    padding: 0 10px;
     padding-top: 100px;
     padding-bottom: 100px; 
     text-align: center;
@@ -384,6 +388,7 @@ h3 {
 #projects p {
     font-family: var(--main-font-family);
     font-size: 2.5rem;
+    margin: 0 10px;
     margin-top: 10px;
 }
 
@@ -392,7 +397,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 /*----------card - Project------------ */
@@ -711,7 +716,7 @@ hr {
     flex-direction: column;
     gap: 15px;
     position: fixed;
-    right: 1%;
+    right: 4%;
     bottom: 4%;
 }
 
@@ -828,7 +833,7 @@ hr {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
 
     #home,
     #projects,
@@ -901,9 +906,13 @@ hr {
     .skill-logos .habilidade {
         margin: 10px;
     }
+
+    h3 {
+        font-size: 5rem;
+    }
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
     .skill-logos {
         width: 80%;
     }
@@ -917,7 +926,7 @@ hr {
     }
 
     h3 {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
     #about img {
@@ -927,6 +936,12 @@ hr {
     }
 }
 
+@media  screen and (max-width: 250px) {
+    h3 {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
 .nav-active {
     transform: translate(0%);
 }
