@@ -14,8 +14,8 @@
     /* --main-header-background:#21252e; */
     --main-header-background: linear-gradient(-45deg, var(--main-decor-color), var(--main-background));
 
-    --main-font-family: 'Poppins', sans-serif;
-    --font-pixel-title: 'VT323', monospace;
+     --main-font-family: 'Poppins', sans-serif;
+     --font-pixel-title: 'VT323', monospace; 
     /* --main-font-family: var(--font-pixel-title);  */ 
     --main-font-family: monospace, sans-serif;
     
