@@ -919,6 +919,29 @@ hr {
         height: 200px; 
         
     }
+
+    /*--projetos--*/
+    .card-descri h2 {
+        font-size: 2rem;  
+    }
+    
+    #projects p {
+        font-size: 2rem;
+    }
+
+    .card-descri button {
+        
+    
+        margin-top: 2px;
+        padding: 5px;
+    
+        background-color: var(--main-background) ;
+        border: 2px solid var(--main-decor-color);
+        border-radius: 20px;
+    
+        font-size: 1.5rem;
+        
+    }
 }
 
 @media  screen and (max-width: 250px) {
@@ -1022,5 +1045,5 @@ hr {
 }
 
 .botao-Mario:active {
-    background-image: url(./mario/imagens/frames/corte/botao-frame1.png);
+    background-image: url(./mario/imagens/frames/corte/mario-comemoracao.png);
 }
