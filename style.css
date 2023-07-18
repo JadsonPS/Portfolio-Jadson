@@ -442,7 +442,7 @@ h3 {
     background: linear-gradient(0deg, var(--main-decor-color), transparent);
     font-size: 1.8rem;
 }
-.card:hover .card-descri {
+.card:hover .card-descri{
     top: 0;
 }
 
@@ -460,6 +460,7 @@ h3 {
     padding: 0 10px;
 }
 
+/*-------Descrição dos projetos------*/
 .card .work-content {
     text-align: justify;
     font-size: 1rem;
@@ -467,10 +468,12 @@ h3 {
     font-family: var(--main-font-family);
     display: flex;
     justify-content: center;
+    opacity: 0;
+}
+.card:hover  .work-content{
+    opacity: 1;
 }
 
-
-/*-------Descrição dos projetos------*/
 .card .work-content p {
     margin: 0;
     width: 90%;    
@@ -872,13 +875,10 @@ hr {
     }
 
     .card-descri {
-       
-    
         width: 100%;
         height: 100%;
         position: absolute;
         top: 60%;
-       
     
     }
 
@@ -901,10 +901,10 @@ hr {
         z-index: 1;
     }
 
-    /* #contact .tel p{
+    #contact .tel p{
        display: none;
     }
- */
+ 
     #contact .tel .info-contact {
         padding: 0;
         padding-top: 10px;
