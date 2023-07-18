@@ -561,7 +561,7 @@ h3 {
     display: flex;
     justify-content: center;
     margin-top: 1.2rem;
-    gap: 10px;
+    gap:10px;
     flex-wrap: wrap;
     z-index: 1;
 }
@@ -592,12 +592,8 @@ h3 {
     background-color: rgb(255, 255, 255);
     color: var(--main-decor-color);
     border-radius: 50%;
-    font-size: 2rem;
-    text-decoration: none;
-}
-
-#contact .tel a{
     font-size: 3.5rem;
+    text-decoration: none;
 }
 #contact .tel a:hover {
     color: rgb(255, 255, 255);
@@ -605,10 +601,12 @@ h3 {
 }
 
 #contact .tel p{
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     position: absolute;
     opacity: 0;
     width: 100%;
+    text-align: center;
+    /* background-color: red; */
 }
 
 @keyframes shower-down {
@@ -895,6 +893,22 @@ hr {
     h3 {
         font-size: 5rem;
     }
+
+    /*--Contatos--*/
+    #contact div {
+        margin-top: 1.2rem;
+        gap:20px;
+        z-index: 1;
+    }
+
+    /* #contact .tel p{
+       display: none;
+    }
+ */
+    #contact .tel .info-contact {
+        padding: 0;
+        padding-top: 10px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -942,6 +956,24 @@ hr {
         font-size: 1.5rem;
         
     }
+
+    /*--Contatos--*/
+    #contact div {
+        margin-top: 1.2rem;
+        gap:20px;
+        z-index: 1;
+    }
+
+    /* #contact .tel p{
+       display: none;
+    }
+ */
+    #contact .tel .info-contact {
+        padding: 0;
+        padding-top: 10px;
+        
+    }
+
 }
 
 @media  screen and (max-width: 250px) {
@@ -1045,5 +1077,5 @@ hr {
 }
 
 .botao-Mario:active {
-    background-image: url(./mario/imagens/frames/corte/mario-comemoracao.png);
+    background-image: url(./mario/imagens/frames/corte/botao-frame1.png);
 }
