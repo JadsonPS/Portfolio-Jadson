@@ -898,6 +898,17 @@ hr {
         font-size: 5rem;
     }
 
+    /*--Sobre--*/
+    #about img {
+        max-width: 200px;
+        height: 200px; 
+    }
+    #about p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
     /*--Contatos--*/
     #contact div {
         margin-top: 1.2rem;
@@ -932,11 +943,17 @@ hr {
         font-size: 4rem;
     }
 
+
+    /*--Sobre--*/
     #about img {
         max-width: 200px;
         height: 200px; 
-        
     }
+    #about p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
 
     /*--projetos--*/
     .card-descri h2 {
