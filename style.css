@@ -502,11 +502,15 @@ h3 {
     color: var(--main-fonts-color);
     font-family: var(--main-font-family);
     transition: 0.2s ease-in;
+    opacity: 0;
 }
 .card-descri button:hover {
     background-color: var(--main-decor-color);
     border: 2px solid var(--main-background);
     color: var(--main-background);
+}
+.card:hover .card-descri button{
+    opacity: 1;
 }
 
 
