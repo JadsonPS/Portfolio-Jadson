@@ -38,9 +38,6 @@
 
 
 
-
-
-
 /*-------------------
         HEADER
 -------------------*/
@@ -94,7 +91,6 @@ a.nav-link {
     color: var(--main-fonts-color);
     font-family: var(--main-font-family);
     font-size: 2rem;
-    /* cursor: pointer; */
     text-transform: uppercase;
 }
 
@@ -752,7 +748,6 @@ hr {
         transform: translateY(2px);
     }
 }
-
 
 
 
