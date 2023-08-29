@@ -106,6 +106,7 @@ a.nav-link {
     color: var(--main-background);
     background: var(--main-decor-color);
     border-radius: 5px;
+    transition: 0.5s ease-in-out;
 }
 
 
@@ -391,10 +392,12 @@ h3 {
 }
 
 .work {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 98%;
     /* padding: 20px; */
 }
 
@@ -504,7 +507,7 @@ h3 {
     border: 2px solid var(--main-decor-color);
     border-radius: 20px;
 
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--main-fonts-color);
     font-family: var(--main-font-family);
     transition: 0.2s ease-in;
