@@ -251,7 +251,7 @@ h3 {
 }
 
 #about p {
-    max-width: 700px;
+    max-width: 900px;
     height: auto;
     margin: 20px;
     font-family: var(--main-font-family);
@@ -290,6 +290,7 @@ h3 {
     font-size: 2.5rem;
     /* padding: 10px; */
     margin: 0 20px;
+    margin-top: 20px;
 }
 
 .skill-logos {
@@ -316,11 +317,12 @@ h3 {
 }
 
 .skill-logos .habilidade:hover h4 {
-    animation: shower 1s forwards;
+    
+    animation: shower 0.5s forwards;
 }
 
 .skill-logos .habilidade:hover i {
-    animation: hider 1s forwards;
+    animation: hider 0.5s forwards;
 }
 
 .skill-logos .habilidade h4 {
@@ -329,6 +331,10 @@ h3 {
     font-size: 3.2rem;
     padding-bottom: 0;
     font-family: var(--main-font-family);
+}
+
+.loadingSkill {
+    filter: grayscale(2);
 }
 
 @keyframes shower {
@@ -1081,6 +1087,7 @@ hr {
     height: 180px;
     text-align: center;
 
+    
     position: relative;
 
     z-index: 1;
